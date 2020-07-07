@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "room_rents",
+  "info": {
+    "name": "room_rents"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "check_in": {
+      "type": "date"
+    },
+    "check_out": {
+      "type": "date"
+    },
+    "room": {
+      "model": "rooms",
+      "via": "rents"
+    }
+  }
+}

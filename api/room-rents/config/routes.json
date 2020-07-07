@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/room-rents",
+      "handler": "room-rents.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/room-rents/count",
+      "handler": "room-rents.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/room-rents/:id",
+      "handler": "room-rents.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/room-rents",
+      "handler": "room-rents.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/room-rents/:id",
+      "handler": "room-rents.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/room-rents/:id",
+      "handler": "room-rents.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
